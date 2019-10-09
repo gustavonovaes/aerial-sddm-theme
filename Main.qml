@@ -489,11 +489,11 @@ Rectangle {
         // load and randomize playlist
         var time = parseInt(new Date().toLocaleTimeString(Qt.locale(),'h'))
         if ( time >= 5 && time <= 17 ) {
-            playlist1.load(Qt.resolvedUrl(config.background_day), 'm3u')
-            playlist2.load(Qt.resolvedUrl(config.background_day), 'm3u')
+            playlist1.load(Qt.resolvedUrl(config.backgroundPlaylistDay), 'm3u')
+            playlist2.load(Qt.resolvedUrl(config.backgroundPlaylistDay), 'm3u')
         } else {
-            playlist1.load(Qt.resolvedUrl(config.background_night), 'm3u')
-            playlist2.load(Qt.resolvedUrl(config.background_night), 'm3u')
+            playlist1.load(Qt.resolvedUrl(config.backgroundPlaylistNight), 'm3u')
+            playlist2.load(Qt.resolvedUrl(config.backgroundPlaylistNight), 'm3u')
         }
 
         for (var k = 0; k < Math.ceil(Math.random() * 10) ; k++) {

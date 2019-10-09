@@ -49,7 +49,7 @@ done < playlist_file
 
 You can change a few settings in this file
 - `background` - default background image
-- `background_day` and `background_night` - video playlists
+- `backgroundPlaylistDay` and `backgroundPlaylistNight` - video playlists
 - `displayFont` - font
 - `showLoginButton` - if set to false will hide the login button
 - `showClearPasswordButton` - if set to false will hide the clear password button that appears when text is inputed
@@ -61,8 +61,8 @@ Example config (not the same as the screenshots):
 
 ```
 [General]
-background_day=playlist_day.m3u
-background_night=playlist_night.m3u
+backgroundPlaylistDay=playlist/day.m3u
+backgroundPlaylistNight=playlist/night.m3u
 displayFont="Misc Fixed"
 showLoginButton=false
 passwordLeftMargin=15
