@@ -225,7 +225,7 @@ Rectangle {
                     font.bold: true
                     font.pixelSize: 16
                     color: "white"
-                    text: "Username"
+                    text: textConstants.login
                     anchors.verticalCenter: parent.verticalCenter
                 }
 
