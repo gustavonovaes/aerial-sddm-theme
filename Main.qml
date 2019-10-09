@@ -65,9 +65,14 @@ Rectangle {
         anchors.fill: parent; source: mediaplayer1
         MouseArea {
             id: mouseArea1
-            anchors.fill: parent;
-            //onPressed: {playlist1.shuffle(); playlist1.next();}
-            onPressed: { fader1.state = fader1.state == "off" ? "on" : "off" ; }
+            anchors.fill: parent
+            onPressed: { 
+                fader1.state = fader1.state == "off" ? "on" : "off"
+                if (username_input_box.text == "")
+                    username_input_box.focus = true
+                else
+                    password_input_box.focus = true
+        }
         }
         Keys.onPressed: {
             fader1.state = "on";
@@ -478,12 +483,6 @@ Rectangle {
     }
 
     Component.onCompleted: {
-        // Set Focus
-        /* if (username_input_box.text == "") */
-        /*     username_input_box.focus = true */
-        /* else */
-        /*     password_input_box.focus = true */
-
         video1.focus = true
 
         // load and randomize playlist
