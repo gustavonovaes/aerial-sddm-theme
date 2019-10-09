@@ -54,7 +54,6 @@ You can change a few settings in this file
 - `showLoginButton` - If true shows the login button
 - `showClearPasswordButton` - If true shows the clear password button
 - `showTopBar` - if set to false will hide the wm/keyboard top bar
-- `passwordLeftMargin` and `usernameLeftMargin` - Set margin between input boxes and labels
 - `relativePositionX` and `relativePositionY` - Set the position of the login text box and clock
 
 
@@ -72,8 +71,6 @@ showLoginButton=false
 showClearPasswordButton=false
 showTopBar=true
 
-passwordLeftMargin=15
-usernameLeftMargin=15
 relativePositionX=0.5
 relativePositionY=0.75
 ```

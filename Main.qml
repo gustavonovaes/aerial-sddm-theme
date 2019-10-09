@@ -235,7 +235,7 @@ Rectangle {
                     text: userModel.lastUser
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: username_label.right
-                    anchors.leftMargin: config.usernameLeftMargin
+                    anchors.leftMargin: 20
                     anchors.right: parent.right
                     anchors.rightMargin: 0
                     font: textFont.name
@@ -286,7 +286,7 @@ Rectangle {
                     anchors.right: parent.right
                     anchors.rightMargin: parent.height // this sets button width, this way its a square
                     anchors.left: password_label.right
-                    anchors.leftMargin: config.passwordLeftMargin
+                    anchors.leftMargin: 20
                     borderColor: "transparent"
                     textColor: "white"
                     tooltipBG: "#25000000"
