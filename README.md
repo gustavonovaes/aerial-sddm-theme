@@ -48,37 +48,36 @@ done < playlist_file
 ### Changing settings in `theme.conf.user`
 
 You can change a few settings in this file
-- `background` - default background image
-- `backgroundPlaylistDay` and `backgroundPlaylistNight` - video playlists
-- `displayFont` - font
-- `showLoginButton` - if set to false will hide the login button
-- `showClearPasswordButton` - if set to false will hide the clear password button that appears when text is inputed
-- `passwordLeftMargin` and `usernameLeftMargin` - set margin between input boxes and labels, some fonts are messy and allows fixing of overlap
-- `relativePositionX` and `relativePositionY` - position the login text box and clock
+- `displayFont` - Font name
+- `background` - Fallback background image
+- `backgroundPlaylistDay` and `backgroundPlaylistNight` - Path of .m3u playlist file to play at day and night
+- `showLoginButton` - If true shows the login button
+- `showClearPasswordButton` - If true shows the clear password button
 - `showTopBar` - if set to false will hide the wm/keyboard top bar
+- `passwordLeftMargin` and `usernameLeftMargin` - Set margin between input boxes and labels
+- `relativePositionX` and `relativePositionY` - Set the position of the login text box and clock
 
-Example config (not the same as the screenshots):
+
+Default config
 
 ```
 [General]
-backgroundPlaylistDay=playlist/day.m3u
-backgroundPlaylistNight=playlist/night.m3u
-displayFont="Misc Fixed"
+displayFont="Droid Sans Mono for Powerline"
+
+background=assets/fallback.jpg
+backgroundPlaylistDay=playlists/day.m3u
+backgroundPlaylistNight=playlists/night.m3u
+
 showLoginButton=false
+showClearPasswordButton=false
+showTopBar=true
+
 passwordLeftMargin=15
 usernameLeftMargin=15
-showTopBar=true
+relativePositionX=0.5
+relativePositionY=0.75
 ```
 
-## Preview
-
-![preview1](screens/preview1.gif)
-![preview2](screens/preview2.gif)
-![preview3](screens/preview3.gif)
-
-## Using my custom theme.conf.user
-
-![custom](screens/custom.gif)
 
 ## License
 
