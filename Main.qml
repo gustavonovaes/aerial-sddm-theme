@@ -72,7 +72,7 @@ Rectangle {
                     username_input_box.focus = true
                 else
                     password_input_box.focus = true
-        }
+            }
         }
         Keys.onPressed: {
             fader1.state = "on";
@@ -197,10 +197,8 @@ Rectangle {
 
         Rectangle {
             id: login_container
-
-            //y: parent.height * 0.8
             y: clock.y + clock.height + 30
-            width: clock.width
+            width: clock.width * 0.70;
             height: parent.height * 0.08
             color: "transparent"
             anchors.left: clock.left
@@ -218,12 +216,11 @@ Rectangle {
 
                 Text {
                     id: username_label
-                    width: parent.width * 0.27
-                    height: parent.height * 0.66
-                    horizontalAlignment: Text.AlignLeft
+                    width: parent.width * 0.47
+                    horizontalAlignment: Text.AlignRight
                     font.family: textFont.name
                     font.bold: true
-                    font.pixelSize: 16
+                    font.pixelSize: 22
                     color: "white"
                     text: textConstants.login
                     anchors.verticalCenter: parent.verticalCenter
@@ -231,14 +228,15 @@ Rectangle {
 
                 TextBox {
                     id: username_input_box
-                    height: parent.height
+                    height: parent.height + 20
                     text: userModel.lastUser
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.left: username_label.right
                     anchors.leftMargin: 20
                     anchors.right: parent.right
                     anchors.rightMargin: 0
-                    font: textFont.name
+                    font.family: textFont.name
+                    font.pixelSize: 20
                     color: "#25000000"
                     borderColor: "transparent"
                     textColor: "white"
@@ -257,7 +255,7 @@ Rectangle {
 
             Rectangle {
                 id: password_row
-                y: username_row.height + 10
+                y: username_row.height + 40
                 height: parent.height * 0.36
                 color: "transparent"
                 anchors.right: parent.right
@@ -267,20 +265,21 @@ Rectangle {
 
                 Text {
                     id: password_label
-                    width: parent.width * 0.27
+                    width: parent.width * 0.47
                     text: textConstants.password
                     anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignLeft
+                    horizontalAlignment: Text.AlignRight
                     font.family: textFont.name
                     font.bold: true
-                    font.pixelSize: 16
+                    font.pixelSize: 22
                     color: "white"
                 }
 
                 PasswordBox {
                     id: password_input_box
-                    height: parent.height
-                    font: textFont.name
+                    height: parent.height + 20
+                    font.family: textFont.name
+                    font.pixelSize: 20
                     color: "#25000000"
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.right: parent.right
@@ -369,7 +368,6 @@ Rectangle {
                     anchors.leftMargin: 0
                 }
             }
-
         }
     }
 
