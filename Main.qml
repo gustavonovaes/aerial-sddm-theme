@@ -286,7 +286,7 @@ Rectangle {
                     textColor: "white"
                     tooltipBG: "#25000000"
                     tooltipFG: "#dc322f"
-                    image: "components/resources/warning_red.png"
+                    image: "assets/fail.png"
                     onTextChanged: {
                         if (password_input_box.text == "") {
                             clear_passwd_button.visible = false
@@ -457,7 +457,7 @@ Rectangle {
             ImageButton {
                 id: reboot_button
                 height: parent.height
-                source: "components/resources/reboot.svg"
+                source: "assets/reboot.svg"
 
                 visible: sddm.canReboot
                 onClicked: sddm.reboot()
@@ -468,7 +468,7 @@ Rectangle {
             ImageButton {
                 id: shutdown_button
                 height: parent.height
-                source: "components/resources/shutdown.svg"
+                source: "assets/shutdown.svg"
                 visible: sddm.canPowerOff
                 onClicked: sddm.powerOff()
                 KeyNavigation.backtab: reboot_button
